@@ -1,11 +1,11 @@
-#include<iostream>
 #include "Field.hpp"
 
 
 int main()
 {
     Field my_field(10);
-    std::cout<<my_field.value_get();
+    int x = my_field.value_get();
+    std::cout<<x;
 
 
     return 0;
