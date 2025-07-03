@@ -17,6 +17,12 @@ Field<T>::Field(T value_)
     this->value = value_;
 }
 
+template<typename T>
+std::string Field<T>::type_of_field()
+{
+    return (typeid(this->value).name());
+}
+
 
 template class Field<int>;
 template class Field<long long int>;
